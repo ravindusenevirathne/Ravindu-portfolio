@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Ravindu Senevirathne - IT Support Engineer transitioning to DevOps. Experienced in Cloud (AWS), Docker, CI/CD, networking and systems automation.">
+    <title>Ravindu Senevirathne | Aspiring DevOps Engineer Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="dark-theme">
+    <!-- Custom Cursor Glow -->
+    <div class="cursor-glow" id="cursor-glow"></div>
+
+    <!-- Header & Navigation -->
+    <header class="header" id="header">
+        <div class="nav-container">
+            <a href="#hero" class="logo" id="nav-logo">
+                <span class="logo-icon">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="16 18 22 12 16 6"></polyline>
+                        <polyline points="8 6 2 12 8 18"></polyline>
+                    </svg>
+                </span>
+                <span class="logo-text">RS<span class="highlight">.devops</span></span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                    <li><a href="#photography" class="nav-link">Photography</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <button class="hamburger" id="hamburger" aria-expanded="false" aria-label="Toggle menu" aria-controls="nav-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero / Landing Section -->
+    <section class="hero-section" id="hero">
+        <canvas id="hero-canvas"></canvas>
+        <div class="hero-overlay"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="terminal-badge" id="terminal-badge">
+                    <span class="pulse-dot"></span> Ready to Automate
+                </div>
+                <h1 class="hero-title">
+                    <span class="greeting">Hi, I'm</span>
+                    <span class="name">Ravindu Senevirathne</span>
+                </h1>
+                <h2 class="hero-subtitle">
+                    <span class="role-from">IT Support Engineer</span>
+                    <span class="transition-arrow">&rarr;</span>
+                    <span class="role-to highlight">Aspiring DevOps Engineer</span>
+                </h2>
+                <div class="tagline-container">
+                    <span class="tagline-prefix">$ echo </span>
+                    <span class="tagline" id="typing-tagline"></span><span class="cursor">|</span>
+                </div>
+                <p class="hero-description">
+                    Bridging the gap between traditional infrastructure support and modern cloud orchestration. Focused on designing reliable pipelines, containerizing workloads, and implementing infrastructure as code.
+                </p>
+                <div class="hero-ctas">
+                    <a href="#projects" class="btn btn-primary" id="btn-projects">
+                        View Projects 
+                        <svg class="btn-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary" id="btn-cv">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hex-grid-container">
+                    <div class="hex-card card-glow">
+                        <div class="hex-content">
+                            <svg class="hex-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                                <path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"></path>
+                            </svg>
+                            <span>Databases</span>
+                        </div>
+                    </div>
+                    <div class="hex-card card-glow">
+                        <div class="hex-content">
+                            <svg class="hex-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                                <path d="M2 17l10 5 10-5"></path>
+                                <path d="M2 12l10 5 10-5"></path>
+                            </svg>
+                            <span>Infrastructure</span>
+                        </div>
+                    </div>
+                    <div class="hex-card card-glow">
+                        <div class="hex-content">
+                            <svg class="hex-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                                <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                                <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                            </svg>
+                            <span>Containers</span>
+                        </div>
+                    </div>
+                    <div class="hex-card card-glow">
+                        <div class="hex-content">
+                            <svg class="hex-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="2" y1="12" x2="22" y2="12"></line>
+                                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                            </svg>
+                            <span>Networks</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span class="mouse-icon">
+                <span class="wheel"></span>
+            </span>
+            <span class="scroll-text">Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="about-section section-padding" id="about">
+        <div class="container">
+            <h2 class="section-title reveal" id="about-title">
+                <span class="title-number">01.</span> About Me
+            </h2>
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <p class="lead-text">
+                        I am a detail-oriented IT Professional with a strong foundation in network infrastructure management, system administration, and cloud technologies.
+                    </p>
+                    <p>
+                        My professional journey began with hands-on networking experiences at the **Bank of Ceylon Head Office**, where I assisted in configuring switches, routers, and monitoring branch connectivity. Currently, as an **Executive IT Support Engineer** at PortCity BPO, I oversee systems optimization, enforce active directory GPOs, and manage security environments.
+                    </p>
+                    <p>
+                        Driven by a passion for automation, reproducibility, and high availability, I am actively transitioning into **DevOps Engineering**. I spend my hours mastering containers, crafting automated CI/CD pipelines, and writing automation scripts to transition networking infrastructure to the cloud.
+                    </p>
+                    <div class="transition-map">
+                        <h3 class="transition-map-title">Career Evolution Path</h3>
+                        <div class="evolution-steps">
+                            <div class="step-card finished">
+                                <span class="step-icon">
+                                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                                        <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                                        <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                                        <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                                    </svg>
+                                </span>
+                                <h4>Network Intern</h4>
+                                <p>Cisco Switching, Branch Connectivity, Routing Protocols</p>
+                            </div>
+                            <div class="step-card current">
+                                <span class="step-icon">
+                                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                        <line x1="8" y1="21" x2="16" y2="21"></line>
+                                        <line x1="12" y1="17" x2="12" y2="21"></line>
+                                    </svg>
+                                </span>
+                                <h4>IT Support Exec</h4>
+                                <p>System Admin, Active Directory GPOs, Security, Troubleshooting</p>
+                            </div>
+                            <div class="step-card future">
+                                <span class="step-icon animate-pulse">
+                                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                    </svg>
+                                </span>
+                                <h4>DevOps Engineer</h4>
+                                <p>Docker, Kubernetes, GitHub Actions, AWS Cloud Automation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual reveal">
+                    <div class="photo-frame-container">
+                        <div class="photo-frame">
+                            <img src="assets/images/ravidp.png" alt="Ravindu Senevirathne" class="profile-photo">
+                            <div class="avatar-info-tag">
+                                <span class="info-label">Current Role:</span>
+                                <span class="info-val">Executive IT Support</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="quick-stats-grid">
+                        <div class="stat-item card-glow">
+                            <span class="stat-num" data-val="3">0+</span>
+                            <span class="stat-label">Years IT Exp.</span>
+                        </div>
+                        <div class="stat-item card-glow">
+                            <span class="stat-num" data-val="7">0+</span>
+                            <span class="stat-label">Certifications</span>
+                        </div>
+                        <div class="stat-item card-glow">
+                            <span class="stat-num" data-val="5">0+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat-item card-glow">
+                            <span class="stat-num" data-val="99.9">0</span><span class="percent-sign">%</span>
+                            <span class="stat-label">Sys Uptime Score</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline Section -->
+    <section class="experience-section section-padding" id="experience">
+        <div class="container">
+            <h2 class="section-title reveal" id="experience-title">
+                <span class="title-number">02.</span> Professional Journey
+            </h2>
+            <div class="timeline">
+                <div class="timeline-line"></div>
+                
+                <!-- Timeline Item 1 -->
+                <div class="timeline-item reveal left">
+                    <div class="timeline-marker">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="3">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                    </div>
+                    <div class="timeline-content card-glow">
+                        <span class="timeline-date">Mar 2026 – Present</span>
+                        <h3 class="timeline-role">Executive IT Support Engineer</h3>
+                        <h4 class="timeline-company">PortCity BPO (PVT) LTD.</h4>
+                        <p class="timeline-desc">
+                            Responsible for maintaining high availability systems, optimizing infrastructure performance, and safeguarding business continuity.
+                        </p>
+                        <ul class="timeline-tasks">
+                            <li>Implemented and audited security protocols across user profiles and domains via advanced Active Directory Group Policy Objects (GPOs).</li>
+                            <li>Optimized local and virtual environments resulting in significant reduction in hardware troubleshooting tickets.</li>
+                            <li>Integrated automated scripting methods to monitor network endpoints and expedite support workflows.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 2 -->
+                <div class="timeline-item reveal right">
+                    <div class="timeline-marker">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="3">
+                            <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                            <path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"></path>
+                        </svg>
+                    </div>
+                    <div class="timeline-content card-glow">
+                        <span class="timeline-date">Aug 2024 – Jan 2025</span>
+                        <h3 class="timeline-role">Communication & Network Engineering Intern</h3>
+                        <h4 class="timeline-company">Bank of Ceylon Head Office</h4>
+                        <p class="timeline-desc">
+                            Gained deep, hands-on production networking experience at one of the country's leading financial institutions.
+                        </p>
+                        <ul class="timeline-tasks">
+                            <li>Monitored wide-area network (WAN) and local-area network (LAN) branch connectivity interfaces across the country.</li>
+                            <li>Configured Cisco enterprise-grade routers and multi-layer switches using industry best practices.</li>
+                            <li>Participated in immediate incident response pipelines, isolating link errors and debugging network hardware.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 3 -->
+                <div class="timeline-item reveal left">
+                    <div class="timeline-marker">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="3">
+                            <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </div>
+                    <div class="timeline-content card-glow">
+                        <span class="timeline-date">Jul 2020 – Jan 2021</span>
+                        <h3 class="timeline-role">Bank Trainee</h3>
+                        <h4 class="timeline-company">Bank of Ceylon, Matara</h4>
+                        <p class="timeline-desc">
+                            Learned financial processes, data logging systems, operational audit compliance, and customer relations management.
+                        </p>
+                        <ul class="timeline-tasks">
+                            <li>Assisted bank clients with digital banking platforms, resolving authentication issues.</li>
+                            <li>Managed internal data inputs under strict corporate and financial compliance standards.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education Subsection -->
+            <div class="education-container">
+                <h3 class="education-section-title reveal">Education & Qualifications</h3>
+                <div class="education-grid">
+                    <!-- Education 1 -->
+                    <div class="education-card card-glow reveal">
+                        <div class="edu-header">
+                            <span class="edu-icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                                    <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path>
+                                </svg>
+                            </span>
+                            <div class="edu-meta">
+                                <span class="edu-date">2021 – 2025</span>
+                                <h4 class="edu-degree">BICT (Hons) in Computer Networks</h4>
+                                <h5 class="edu-institution">University of Kelaniya</h5>
+                            </div>
+                        </div>
+                        <div class="edu-body">
+                            <p>Graduated with a **GPA of 3.51** (Second Class Upper Division). Focus areas included advanced networking protocols, infrastructure design, routing & switching, network security, and network administration.</p>
+                        </div>
+                    </div>
+                    <!-- Education 2 -->
+                    <div class="education-card card-glow reveal">
+                        <div class="edu-header">
+                            <span class="edu-icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                                    <path d="M2 17l10 5 10-5"></path>
+                                    <path d="M2 12l10 5 10-5"></path>
+                                </svg>
+                            </span>
+                            <div class="edu-meta">
+                                <span class="edu-date">2024</span>
+                                <h4 class="edu-degree">AWS Cloud Practitioner Training</h4>
+                                <h5 class="edu-institution">ATN Campus</h5>
+                            </div>
+                        </div>
+                        <div class="edu-body">
+                            <p>Comprehensive training covering AWS cloud infrastructure, billing structures, security policies, core services (EC2, VPC, S3, IAM), and shared responsibility models.</p>
+                        </div>
+                    </div>
+                    <!-- Education 3 -->
+                    <div class="education-card card-glow reveal">
+                        <div class="edu-header">
+                            <span class="edu-icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                                </svg>
+                            </span>
+                            <div class="edu-meta">
+                                <span class="edu-date">2020</span>
+                                <h4 class="edu-degree">Diploma in English Language Proficiency</h4>
+                                <h5 class="edu-institution">ESOFT Metro Campus</h5>
+                            </div>
+                        </div>
+                        <div class="edu-body">
+                            <p>Focused on advanced oral communication, business writing, presentation skills, and professional interactions within global enterprise environments.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section section-padding" id="skills">
+        <div class="container">
+            <h2 class="section-title reveal" id="skills-title">
+                <span class="title-number">03.</span> Core Skillset
+            </h2>
+            <p class="section-description reveal">
+                A hybrid skillset blending enterprise networking knowledge with modern cloud infrastructure and automation practices.
+            </p>
+            
+            <div class="skills-grid">
+                <!-- Skill Category: Cloud & DevOps -->
+                <div class="skill-category-card card-glow reveal">
+                    <h3 class="category-title">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                        </svg>
+                        Cloud & DevOps
+                    </h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">AWS (EC2, S3, IAM, VPC)</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-bar-bg"><div class="skill-bar" data-width="80%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Docker (Containerization)</span>
+                                <span class="skill-percent">75%</span>
+                            </div>
+                            <div class="skill-bar-bg"><div class="skill-bar" data-width="75%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">CI/CD (GitHub Actions, Jenkins)</span>
+                                <span class="skill-percent">70%</span>
+                            </div>
+                            <div class="skill-bar-bg"><div class="skill-bar" data-width="70%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Kubernetes (K8s Basics)</span>
+                                <span class="skill-percent">55%</span>
+                            </div>
+                            <div class="skill-bar-bg"><div class="skill-bar" data-width="55%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Git & Version Control</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar-bg"><div class="skill-bar" data-width="85%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill Category: Enterprise Networking -->
+                <div class="skill-category-card card-glow reveal">
+                    <h3 class="category-title">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                        </svg>
+                        Networking Infrastructure
+                    </h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Cisco Router/Switch Config</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar-bg"><div class="skill-bar" data-width="85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Routing (OSPF, NAT, Static)</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-bar-bg"><div class="skill-bar" data-width="80%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Switching (VLANs, DTP, Port Security)</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar-bg"><div class="skill-bar" data-width="85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Network Analysis (Wireshark)</span>
+                                <span class="skill-percent">75%</span>
+                            </div>
+                            <div class="skill-bar-bg"><div class="skill-bar" data-width="75%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill Category: Cyber Security & OS -->
+                <div class="skill-category-card card-glow reveal">
+                    <h3 class="category-title">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                        </svg>
+                        Security & OS Systems
+                    </h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Linux Admin (Ubuntu, CentOS, Kali)</span>
+                                <span class="skill-percent">75%</span>
+                            </div>
+                            <div class="skill-bar-bg"><div class="skill-bar" data-width="75%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Windows Server & AD GPOs</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-bar-bg"><div class="skill-bar" data-width="80%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Firewalls (Fortinet, policies)</span>
+                                <span class="skill-percent">70%</span>
+                            </div>
+                            <div class="skill-bar-bg"><div class="skill-bar" data-width="70%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Linux Hardening & Network Security</span>
+                                <span class="skill-percent">70%</span>
+                            </div>
+                            <div class="skill-bar-bg"><div class="skill-bar" data-width="70%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill Category: Programming & Tools -->
+                <div class="skill-category-card card-glow reveal">
+                    <h3 class="category-title">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                        Programming & Utilities
+                    </h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Python & Bash (Automation Scripting)</span>
+                                <span class="skill-percent">75%</span>
+                            </div>
+                            <div class="skill-bar-bg"><div class="skill-bar" data-width="75%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Web Dev (HTML/CSS/JS, PHP, SQL)</span>
+                                <span class="skill-percent">70%</span>
+                            </div>
+                            <div class="skill-bar-bg"><div class="skill-bar" data-width="70%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">VMware Workstation & ESXi</span>
+                                <span class="skill-percent">75%</span>
+                            </div>
+                            <div class="skill-bar-bg"><div class="skill-bar" data-width="75%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Cisco Packet Tracer</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-bar-bg"><div class="skill-bar" data-width="90%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section section-padding" id="projects">
+        <div class="container">
+            <h2 class="section-title reveal" id="projects-title">
+                <span class="title-number">04.</span> Featured Projects
+            </h2>
+            
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card reveal" data-tilt>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <div class="project-icons">
+                                <svg class="folder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                                </svg>
+                                <a href="https://github.com/ravindusenevirathne" target="_blank" aria-label="GitHub Repository" class="project-link">
+                                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                            <h3 class="project-title">Embedded Network Multi-Tester</h3>
+                        </div>
+                        <p class="project-description">
+                            An ESP32-based portable hardware LAN testing device. Conducts copper cable integrity checks, automated IP scanning, local Wi-Fi strength analysis, pings, and captures SNMP reports. Integrates dynamically with a Flutter mobile app UI for monitoring.
+                        </p>
+                        <div class="project-tags">
+                            <span>ESP32</span>
+                            <span>C++</span>
+                            <span>Flutter</span>
+                            <span>SNMP</span>
+                            <span>Networks</span>
+                        </div>
+                    </div>
+                    <div class="card-glow-bg"></div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card reveal" data-tilt>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <div class="project-icons">
+                                <svg class="folder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                                </svg>
+                                <a href="https://github.com/ravindusenevirathne" target="_blank" aria-label="GitHub Repository" class="project-link">
+                                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                            <h3 class="project-title">TrueNAS iSCSI Enterprise Backup</h3>
+                        </div>
+                        <p class="project-description">
+                            Configured a centralized TrueNAS CORE system providing storage block allocation (iSCSI targets) for network-wide endpoints. Configured automated snapshots, datasets access permissions, off-site replication, and security hardening protocols.
+                        </p>
+                        <div class="project-tags">
+                            <span>TrueNAS</span>
+                            <span>iSCSI</span>
+                            <span>ZFS</span>
+                            <span>SysAdmin</span>
+                            <span>Backup Policy</span>
+                        </div>
+                    </div>
+                    <div class="card-glow-bg"></div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card reveal" data-tilt>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <div class="project-icons">
+                                <svg class="folder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                                </svg>
+                                <a href="https://github.com/ravindusenevirathne" target="_blank" aria-label="GitHub Repository" class="project-link">
+                                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                            <h3 class="project-title">AWS EC2 Library System</h3>
+                        </div>
+                        <p class="project-description">
+                            Developed a multi-tier library web application hosted on an AWS EC2 instance. Formulated a clean HTML/CSS/JS frontend, a PHP backend, and a relational MySQL database. Designed the core transaction module regulating borrow limits and due dates.
+                        </p>
+                        <div class="project-tags">
+                            <span>AWS EC2</span>
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                            <span>HTML5/CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="card-glow-bg"></div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card reveal" data-tilt>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <div class="project-icons">
+                                <svg class="folder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                                </svg>
+                                <a href="https://github.com/ravindusenevirathne" target="_blank" aria-label="GitHub Repository" class="project-link">
+                                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                            <h3 class="project-title">Cisco Multi-Layer Redundant Network</h3>
+                        </div>
+                        <p class="project-description">
+                            Designed a high-availability corporate topology in Cisco Packet Tracer. Configured Layer 3 Inter-VLAN routing, dynamic routing using OSPF, redundant gateways using HSRP, Network Address Translation (NAT), and trunking links via DTP.
+                        </p>
+                        <div class="project-tags">
+                            <span>OSPF</span>
+                            <span>HSRP</span>
+                            <span>NAT</span>
+                            <span>VLANs</span>
+                            <span>Cisco Config</span>
+                        </div>
+                    </div>
+                    <div class="card-glow-bg"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="certifications-section section-padding" id="certifications">
+        <div class="container">
+            <h2 class="section-title reveal" id="certs-title">
+                <span class="title-number">05.</span> Certifications
+            </h2>
+            <div class="certs-grid">
+                <!-- Cert 1 -->
+                <div class="cert-card card-glow reveal">
+                    <div class="cert-icon-container">
+                        <svg class="cert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="7" y1="8" x2="17" y2="8"></line>
+                            <line x1="7" y1="12" x2="17" y2="12"></line>
+                            <line x1="7" y1="16" x2="13" y2="16"></line>
+                        </svg>
+                    </div>
+                    <div class="cert-info">
+                        <h4>AWS Cloud Practitioner Essentials</h4>
+                        <p>Amazon Web Services (AWS)</p>
+                    </div>
+                </div>
+                <!-- Cert 2 -->
+                <div class="cert-card card-glow reveal">
+                    <div class="cert-icon-container">
+                        <svg class="cert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                            <path d="M2 17l10 5 10-5"></path>
+                            <path d="M2 12l10 5 10-5"></path>
+                        </svg>
+                    </div>
+                    <div class="cert-info">
+                        <h4>100 Days of Cloud (AWS)</h4>
+                        <p>KodeKloud</p>
+                    </div>
+                </div>
+                <!-- Cert 3 -->
+                <div class="cert-card card-glow reveal">
+                    <div class="cert-icon-container">
+                        <svg class="cert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+                            <path d="M9 9h6v6H9z"></path>
+                        </svg>
+                    </div>
+                    <div class="cert-info">
+                        <h4>Linux LFS101 - Intro to Linux</h4>
+                        <p>The Linux Foundation</p>
+                    </div>
+                </div>
+                <!-- Cert 4 -->
+                <div class="cert-card card-glow reveal">
+                    <div class="cert-icon-container">
+                        <svg class="cert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                        </svg>
+                    </div>
+                    <div class="cert-info">
+                        <h4>Network Basics</h4>
+                        <p>Cisco Networking Academy</p>
+                    </div>
+                </div>
+                <!-- Cert 5 -->
+                <div class="cert-card card-glow reveal">
+                    <div class="cert-icon-container">
+                        <svg class="cert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                        </svg>
+                    </div>
+                    <div class="cert-info">
+                        <h4>FORTINET v1.0 - Intro to Security</h4>
+                        <p>Fortinet Technical Academy</p>
+                    </div>
+                </div>
+                <!-- Cert 6 -->
+                <div class="cert-card card-glow reveal">
+                    <div class="cert-icon-container">
+                        <svg class="cert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                    </div>
+                    <div class="cert-info">
+                        <h4>Introduction to Cyber Security</h4>
+                        <p>Cisco Networking Academy</p>
+                    </div>
+                </div>
+                <!-- Cert 7 -->
+                <div class="cert-card card-glow reveal">
+                    <div class="cert-icon-container">
+                        <svg class="cert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                    </div>
+                    <div class="cert-info">
+                        <h4>Web Development (HTML, CSS, PHP, SQL)</h4>
+                        <p>University of Kelaniya (Academic Module)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photography (Extra-curricular) Section -->
+    <section class="photography-section section-padding" id="photography">
+        <div class="container">
+            <h2 class="section-title reveal" id="photography-title">
+                <span class="title-number">06.</span> Creative Snapshot
+            </h2>
+            <p class="section-description reveal">
+                Outside of terminal windows and cloud panels, I'm the Lead Photographer at the **LEGION Club (University of Kelaniya)** and a freelance graphic designer. Here are a few shots through my lens.
+            </p>
+            
+            <!-- Gallery Slider / Carousel -->
+            <div class="gallery-slider reveal">
+                <div class="slider-wrapper">
+                    <div class="slider-track" id="slider-track">
+                        <!-- Slide 1 -->
+                        <div class="slide active">
+                            <img src="assets/images/sri_lanka_hills.png" alt="Misty tea plantations of Nuwara Eliya, Sri Lanka - photography by Ravindu" loading="lazy">
+                            <div class="slide-caption">
+                                <h3>Misty tea plantations, Nuwara Eliya</h3>
+                                <p>Landscape / Travel Photography</p>
+                            </div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="slide">
+                            <img src="assets/images/architectural_reflection.png" alt="Modern glass and concrete architectural reflection - photography by Ravindu" loading="lazy">
+                            <div class="slide-caption">
+                                <h3>Geometric Symmetry</h3>
+                                <p>Architectural / Abstract Design</p>
+                            </div>
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="slide">
+                            <img src="assets/images/macro_dew_leaf.png" alt="Macro dew droplets on forest leaf - photography by Ravindu" loading="lazy">
+                            <div class="slide-caption">
+                                <h3>Dew Microcosm</h3>
+                                <p>Macro / Nature Photography</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Controls -->
+                <button class="slider-btn prev" id="slider-prev" aria-label="Previous image">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                </button>
+                <button class="slider-btn next" id="slider-next" aria-label="Next image">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </button>
+                
+                <!-- Dots indicators -->
+                <div class="slider-dots" id="slider-dots">
+                    <span class="dot active" data-index="0"></span>
+                    <span class="dot" data-index="1"></span>
+                    <span class="dot" data-index="2"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section section-padding" id="contact">
+        <div class="container">
+            <h2 class="section-title reveal" id="contact-title">
+                <span class="title-number">07.</span> Connect with Me
+            </h2>
+            
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <h3 class="contact-subtitle">Let's talk automation & scaling</h3>
+                    <p class="contact-lead">
+                        I am currently open to internship, entry-level, or associate DevOps opportunities, as well as enterprise IT systems integration projects.
+                    </p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <span class="label">Call/WhatsApp</span>
+                                <a href="tel:+94770064551" class="value">0770 064 551</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <span class="label">Email Address</span>
+                                <a href="mailto:rsenevirathne7@gmail.com" class="value">rsenevirathne7@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <span class="label">Location</span>
+                                <span class="value">Colombo, Sri Lanka</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/ravindu-senevirathne" target="_blank" aria-label="LinkedIn Profile" class="social-icon">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                        <a href="https://github.com/ravindusenevirathne" target="_blank" aria-label="GitHub Profile" class="social-icon">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form-container reveal">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required placeholder=" " autocomplete="name">
+                            <label for="name">Your Name</label>
+                            <span class="focus-line"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required placeholder=" " autocomplete="email">
+                            <label for="email">Your Email</label>
+                            <span class="focus-line"></span>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" required placeholder=" " rows="5"></textarea>
+                            <label for="message">Message Details</label>
+                            <span class="focus-line"></span>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-submit" id="btn-submit">
+                            <span class="submit-text">Send Message</span>
+                            <span class="submit-loader">
+                                <svg class="spinner" viewBox="0 0 50 50">
+                                    <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>
+                                </svg>
+                            </span>
+                            <svg class="submit-success-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="3">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                        </button>
+                    </form>
+                    <div id="form-success-alert" class="form-success-alert card-glow">
+                        <span class="success-icon-wrapper">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="3">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                        </span>
+                        <div>
+                            <h4>Message Transmitted!</h4>
+                            <p>Thank you, I'll get back to you shortly.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-info">
+                <a href="#hero" class="logo">
+                    <span class="logo-icon">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                    </span>
+                    <span class="logo-text">RS<span class="highlight">.devops</span></span>
+                </a>
+                <p>Building reliable networks, orchestrating secure environments.</p>
+            </div>
+            
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ravindu Senevirathne. All rights reserved.</p>
+                <p class="design-credit">Designed & Handcrafted by Antigravity</p>
+            </div>
+        </div>
+        <a href="#hero" class="back-to-top" id="back-to-top" aria-label="Back to top">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+        </a>
+    </footer>
+
+    <!-- Script Entrypoint -->
+    <script src="js/script.js"></script>
+</body>
+</html>
